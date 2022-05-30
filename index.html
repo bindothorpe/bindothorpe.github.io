@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunny 16</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="input">
+        <div id="setting1">
+          <label for="overcast">Envierment:</label>
+          <select name="overcast" id="overcast">
+            <option value="1">Sunny</option>
+            <option value="0.5">Light Cloud</option>
+            <option value="0.25">Overcast</option>
+            <option value="0.125">Heavy Cloud / Shade</option>
+            <option value="0.0625">Sunset</option>
+          </select>
+        </div>
+        <div id="setting2">
+          <label for="aperture">Aperture:</label>
+          <select name="aperture" id="aperture">
+            <option value="100">f/16</option>
+            <option value="200">f/11</option>
+            <option value="400">f/8</option>
+            <option value="800">f/5.6</option>
+            <option value="1600">f/4</option>
+          </select>
+        </div>
+        <div id="setting3">
+          <label for="iso">ISO:</label>
+          <input type="number" name="iso" id="iso" placeholder="100" />
+        </div>
+        <div id="calc">
+          <input type="button" value="CALCULATE" id="btn-calc" />
+        </div>
+      </div>
+      <div id="result"><span id="result-text"></span></div>
+    </div>
+
+    <script src="./js/application.js"></script>
+  </body>
+</html>
