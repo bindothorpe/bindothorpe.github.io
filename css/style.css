@@ -1,6 +1,9 @@
 :root {
   --error-color: rgb(241, 93, 48);
   --correct-color: rgb(70, 241, 48);
+  --bs-gray-800: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-white: #fff;
 }
 
 * {
@@ -8,6 +11,8 @@
   margin: px;
   font-size: x-large;
   font-family: sans-serif;
+  background-color: var(--bs-gray-800);
+  color: var(--bs-white);
 }
 
 .error {
@@ -15,7 +20,7 @@
 }
 
 .correct {
-  color: var(--correct-color);
+  color: var(--bs-primary);
 }
 
 #wrapper {
@@ -25,12 +30,40 @@
 
 body > div label {
   display: block;
+  margin-bottom: 5px;
 }
 
 body select,
 body input {
   margin-bottom: 20px;
-  width: 80vw;
+  width: 95vw;
   max-width: 400px;
-  border: 2px solid black;
+  border: 2px solid var(--bs-gray-800);
+  border-radius: 5px;
+  outline: none;
+  background-color: var(--bs-white);
+  color: var(--bs-gray-800);
+}
+
+#settings3 input {
+  width: 90vw;
+}
+
+#calc {
+  display: flex;
+  justify-content: space-around;
+}
+
+#btn-calc {
+  width: 50%;
+  color: var(--bs-white);
+  background-color: var(--bs-primary);
+  height: 50px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+#result {
+  display: flex;
+  justify-content: space-around;
 }
